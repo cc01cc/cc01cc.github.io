@@ -29,5 +29,5 @@ layout: post
 博文使用 `post_url` 标签引用链接
 
 ```txt
-{% post_url 2022-05-31-name-of-post %}
+\{\% post_url 2022-05-31-name-of-post \%\}
 ```
