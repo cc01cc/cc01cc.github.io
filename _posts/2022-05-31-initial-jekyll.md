@@ -18,8 +18,21 @@ layout: default
 |   ├── default.html
 |   └── post.html
 ├── _posts (存放文章)
+|   ├── 2022-05-30-initial.md
 |   └── 2022-05-31-initial-jekyll.md
-└── index.html
+|
+├── index.html
+|
+└── about.md
+```
+
+## 加载 liquid
+
+如果需要让 jekyll 为页面加载 `liquid` 需要在头部使用
+
+```txt
+---
+---
 ```
 
 ## 博文链接
@@ -28,6 +41,11 @@ layout: default
 
 博文使用 `post_url` 标签引用链接
 
-```txt
+```liquid
+# 去除 \
 \{\% post_url 2022-05-31-name-of-post \%\}
 ```
+
+## 参考
+
+> Setup | Jekyll • Simple, blog-aware, static sites <https://jekyllrb.com/docs/step-by-step/01-setup/>
